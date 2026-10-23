@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="9d7606ee834cd7103284c5a6feaad36b" label="Service Access Request" max_length="40" name="x_2262012_servic_0_service_access_request" type="collection">
+        <element label="Business Justification" max_length="40" name="business_justification" type="string_full_utf8"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID();" label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Revoked" sequence="3" value="revoked"/>
+                <element inactive_on_update="false" label="Approved" sequence="1" value="approved"/>
+            </choice>
+        </element>
+        <element label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="Service" max_length="40" name="service" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Database" sequence="3" value="database"/>
+                <element inactive_on_update="false" label="AWS" sequence="1" value="aws"/>
+                <element inactive_on_update="false" label="VPN" sequence="0" value="vpn"/>
+                <element inactive_on_update="false" label="Github" sequence="2" value="github"/>
+            </choice>
+        </element>
+        <element choice="1" label="Risk Level" max_length="255" name="risk_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="high"/>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
+            </choice>
+        </element>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.now()" label="Requested Date" mandatory="true" max_length="40" name="requested_date" type="glide_date"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="requested_by"/>
+        </index>
+        <index name="index4">
+            <element name="requested_for"/>
+        </index>
     </element>
 </database>

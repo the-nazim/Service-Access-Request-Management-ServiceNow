@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_2262012_servic_0.service_access_request_user" name="x_2262012_servic_0.service_access_request_user">00c686ee834cd7103284c5a6feaad372</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-23 13:37:00</sys_created_on>
+        <sys_id>90c64eee834cd7103284c5a6feaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>00c686ee834cd7103284c5a6feaad372</sys_name>
+        <sys_package display_value="Service Access Request Management" source="x_2262012_servic_0">1c1202e6834cd7103284c5a6feaad360</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Access Request Management">1c1202e6834cd7103284c5a6feaad360</sys_scope>
+        <sys_update_name>sys_embedded_help_role_90c64eee834cd7103284c5a6feaad336</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-23 13:37:00</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

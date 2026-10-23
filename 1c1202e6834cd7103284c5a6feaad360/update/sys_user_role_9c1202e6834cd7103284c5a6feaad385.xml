@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Can approve or reject requests</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>c/KZ0zCbkf+6YjqPF+R+bipE4TSg5AFGeWFeMquXt1w=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2262012_servic_0.access.approver</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>access.approver</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-23 13:16:31</sys_created_on>
+        <sys_id>9c1202e6834cd7103284c5a6feaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2262012_servic_0.access.approver</sys_name>
+        <sys_package display_value="Service Access Request Management" source="x_2262012_servic_0">1c1202e6834cd7103284c5a6feaad360</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Access Request Management">1c1202e6834cd7103284c5a6feaad360</sys_scope>
+        <sys_update_name>sys_user_role_9c1202e6834cd7103284c5a6feaad385</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-23 13:16:31</sys_updated_on>
+    </sys_user_role>
+</record_update>

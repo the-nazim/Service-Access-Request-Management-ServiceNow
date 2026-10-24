@@ -28,9 +28,10 @@
                 <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
             </choice>
         </element>
-        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
-        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user" type="reference"/>
-        <element default="javascript:gs.now()" label="Requested Date" mandatory="true" max_length="40" name="requested_date" type="glide_date"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element default="javascript:new GlideDate().getValue();" label="Requested Date" mandatory="true" max_length="40" name="requested_date" type="glide_date"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="assigned_to"/>
